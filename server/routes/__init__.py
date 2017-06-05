@@ -1,3 +1,4 @@
+"""Routes"""
 
 import server.routes.health
 import server.routes.index
