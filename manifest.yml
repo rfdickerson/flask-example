@@ -3,4 +3,5 @@ applications:
 - name: python-example
   memory: 256M
   host: python-example-robert
+  command: gunicorn -b :`echo $PORT` server:app 
   #buildpack: https://github.com/heroku/heroku-buildpack-python
