@@ -1,0 +1,1 @@
+web: gunicorn -b :`echo $PORT` server:app 
