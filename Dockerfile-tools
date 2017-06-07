@@ -7,6 +7,4 @@ RUN cd /tmp && pip install -r requirements.txt
 
 WORKDIR /usr/app
 
-EXPOSE 8000
-
-CMD ["gunicorn", "server:app", "-b", "0.0.0.0:8000"]
+CMD ["flask", "server:app", "-b", "0.0.0.0:8000"]
