@@ -17,9 +17,9 @@ image-name-run : "python-flask-run"
 image-name-tools : "python-flask-tools"
 
 build-cmd-run : "npm install --production --unsafe-perm"
-test-cmd : "npm run test"
-build-cmd-debug : "npm install --unsafe-perm"
+test-cmd : "python -m tests.app_tests"
+build-cmd-debug : "python -m compileall"
 
 run-cmd : ""
-debug-cmd : "npm run debug"
-stop-cmd : "npm stop"
+debug-cmd : "flask run"
+stop-cmd : ""
